@@ -32,33 +32,48 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090014;
-        public static final int avg_of_day_of_week=0x7f090009;
-        public static final int avg_of_shifts=0x7f09000a;
-        public static final int avg_of_week=0x7f09000d;
+        public static final int action_settings=0x7f090021;
+        public static final int avg_of_day_of_week=0x7f09000a;
+        public static final int avg_of_last_week=0x7f090018;
+        public static final int avg_of_shifts=0x7f09000b;
+        public static final int avg_of_this_week=0x7f090017;
+        public static final int avg_of_this_week_last_year=0x7f090019;
         public static final int custom_list=0x7f090006;
-        public static final int date=0x7f090010;
+        public static final int date=0x7f09001d;
         public static final int enterHours=0x7f090001;
         public static final int enterTips=0x7f090000;
-        public static final int given_day=0x7f090008;
-        public static final int hours=0x7f090012;
+        public static final int fri=0x7f090012;
+        public static final int given_day=0x7f090009;
+        public static final int hours=0x7f09001f;
+        public static final int mon=0x7f09000e;
         public static final int recent_shift=0x7f090007;
-        public static final int shift_options=0x7f090013;
-        public static final int shift_summary=0x7f09000f;
+        public static final int sat=0x7f090013;
+        public static final int shift_options=0x7f090020;
+        public static final int shift_summary=0x7f09001c;
         public static final int shift_switch=0x7f090005;
+        public static final int stats_main=0x7f09001b;
         public static final int submitShift=0x7f090002;
-        public static final int sum_of_week=0x7f09000c;
-        public static final int tips=0x7f090011;
-        public static final int today=0x7f09000e;
+        public static final int sum_of_last_week=0x7f090015;
+        public static final int sum_of_this_week=0x7f090014;
+        public static final int sum_this_week_last_year=0x7f090016;
+        public static final int sun=0x7f09000d;
+        public static final int thu=0x7f090011;
+        public static final int tips=0x7f09001e;
+        public static final int today=0x7f09001a;
+        public static final int todays_income=0x7f090008;
+        public static final int tue=0x7f09000f;
         public static final int viewShifts=0x7f090004;
         public static final int viewStats=0x7f090003;
-        public static final int week_title=0x7f09000b;
+        public static final int wed=0x7f090010;
+        public static final int week_title=0x7f09000c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_show_all_shift=0x7f030001;
         public static final int activity_stats=0x7f030002;
-        public static final int shift_detail_row=0x7f030003;
+        public static final int activity_stats_2=0x7f030003;
+        public static final int shift_detail_row=0x7f030004;
+        public static final int stats_day=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;

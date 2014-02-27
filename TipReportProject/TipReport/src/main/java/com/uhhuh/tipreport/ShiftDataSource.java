@@ -10,12 +10,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.Toast;
 
 /**
  * Created by olibrooks on 6/22/13.
  */
 public class ShiftDataSource {
 
+    private Context contexty;
     private SQLiteDatabase database;
     private MySQLiteHelper dbhelper;
     private String[] allColumns = { MySQLiteHelper.COLUMN_ID, MySQLiteHelper.COLUMN_TIP,
@@ -23,6 +25,7 @@ public class ShiftDataSource {
 	MySQLiteHelper.COLUMN_MONTH, MySQLiteHelper.COLUMN_YEAR,  MySQLiteHelper.COLUMN_WEEK};
 
     public ShiftDataSource(Context context){
+		this.contexty = context;
         dbhelper = new MySQLiteHelper(context);
     }
 
@@ -30,10 +33,23 @@ public class ShiftDataSource {
         database = dbhelper.getWritableDatabase();
     }
     
-	public List<Shift> getRecords(String column, String[] criteria){
+	public List<Shift> getRecords(String[] column, String[] criteria){
+		String q_column = "";
+		int col_len = column.length;
+		int col_index = 0;
+		for(String value: column){
+			col_index += 1;
+			q_column += value;
+			q_column += "=?";
+			if(col_index != col_len){
+				q_column += " AND ";
+			}
+		}
+		
+	
 		
 		List <Shift> tips = new ArrayList<Shift>();
-		Cursor cursor = database.query(dbhelper.TABLE_TIPS, null, column+"=?",
+		Cursor cursor = database.query(dbhelper.TABLE_TIPS, null, q_column,
 		criteria, null, null, null);
 		
 		cursor.moveToFirst();

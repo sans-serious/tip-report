@@ -43,7 +43,7 @@ public class StatGenerator {
 		String[] criteria = {day};
 		List<String> results= new ArrayList<String>();
 		
-		List<Shift> shifts = shiftData.getRecords("day", criteria);
+		List<Shift> shifts = shiftData.getRecords(new String[]{"day"}, criteria);
 	    
 		float total = 0;
 		int num_of_shifts = 0;
@@ -71,7 +71,7 @@ public class StatGenerator {
 		
 		while(shifts.isEmpty() == true){
 			
-			shifts = shiftData.getRecords(week_of, new String[]{Integer.toString(criteria)});
+			shifts = shiftData.getRecords(new String[]{week_of}, new String[]{Integer.toString(criteria)});
 		    criteria -= 1;
 		}
 		
@@ -114,10 +114,6 @@ public class StatGenerator {
 			now.set(now.YEAR, this_year);
 			date = now.getTime();
 			
-			String t_l = Integer.toString(this_year);
-			int duration = Toast.LENGTH_LONG;
-			Toast toast = Toast.makeText(this.context, t_l, duration);
-			toast.show();
 			
 		}
 		
