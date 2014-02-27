@@ -20,6 +20,7 @@ import android.*;
 import java.util.Calendar;
 import java.util.Locale;
 
+//comment to check proper setup of vcs
 
 public class MainActivity extends Activity {
 	private ShiftDataSource dataSource;
