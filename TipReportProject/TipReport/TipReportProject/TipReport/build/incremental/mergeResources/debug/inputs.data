@@ -1,0 +1,16 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1373320498000 620 0a5cc1de2e5241fd9e05ce039722a83a8ff8aa8b /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/layout/shift_detail_row.xml
+1368496141000 5237 7761bceaf18ed25cdba5f34bf00a55616d078acf /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/drawable-mdpi/ic_launcher.png
+1369982564000 674 c78f92856947cb5742edaa3b94df76b0823dbbe7 /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/values/styles.xml
+1369985869000 518 71590eed505bcacb7a9b726f8d49b631e8a38db1 /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/values/strings.xml
+1373608144000 457 d9b1f6c9c03639758d4613b7eceac9ede33d5798 /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/layout/activity_show_shift.xml
+1369982564000 254 25b6404e44acb50c82590049639d4fb5fefbac8e /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/values-sw720dp-land/dimens.xml
+1369986882000 1484 46ca55bbe5a4117d041b4e8149de211d370f015c /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/layout/activity_main.xml
+1369982564000 211 4e1904afba59d31e5cd6133f6a4c360fa9a5913f /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/values/dimens.xml
+1369982564000 318 f37b4c43b290eba4a42d9102f14a550c301de5c8 /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/values-v11/styles.xml
+1369982564000 181 84de2797380184d8b39af6f829afb092fb956173 /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/values-sw600dp/dimens.xml
+1369982564000 244 045ff451db7cd8e61285502b8c9bbf7405f2078d /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/menu/main.xml
+1368496141000 14383 82acdd75e3fcc36026109406625edc69d4d7212d /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/drawable-xhdpi/ic_launcher.png
+1368496141000 9397 4a5a9affbb731f195fc18fea78d51be7db7536a2 /home/olibrooks/AndroidStudioProjects/TipReportProject/TipReport/src/main/res/drawable-hdpi/ic_launcher.png
