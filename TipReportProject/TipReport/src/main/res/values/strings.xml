@@ -7,12 +7,19 @@
     </string>
     <string name="hello_world" >Hello world!
     </string>
-    <string name="tip_hint">Touch here to enter your tips</string>
+    <string name="tip_hint">$0.00</string>
     <string name="hours_hint">8.5</string>
     <string name="save_shift">Save Shift</string>
-    <string name="tip_entry_title">How was work today?</string>
+    <string name="tip_entry_title">Tips</string>
     <string name="title_activity_show_shift">Verify Shift Details</string>
 	<string name="title_activity_stats">Stats</string>
+    <string name="employer">Employer</string>
+    <string name="employer_hint">Joe's diner</string>
+    <string name="position">Position</string>
+    <string name="position_hint">Waiter</string>
+    <string name="clock_in">Clock-In Time</string>
+    <string name="clock_hint">00:00</string>
+    <string name="clock_out">Clock-Out Time</string>
 
 
 </resources>
