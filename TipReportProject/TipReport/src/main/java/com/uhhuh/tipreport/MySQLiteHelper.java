@@ -5,9 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-/**
- * Created by olibrooks on 6/21/13.
- */
+
 public class MySQLiteHelper extends SQLiteOpenHelper{
 
 
@@ -85,7 +83,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper{
             ") references " + TABLE_WEEKS + "(" + WEEKS_COLUMN_ID + "));";
 
 	private static final String DATABASE_NAME = "tips.db";
-    private static int DATABASE_VERSION = 7;
+    private static final int DATABASE_VERSION = 7;
 
 
 
@@ -99,6 +97,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper{
         database.execSQL(DATABASE_CREATE_SHIFTS);
         database.execSQL(DATABASE_CREATE_EMPLOYER);
         database.execSQL(DATABASE_CREATE_JOB);
+        database.execSQL(DATABASE_CREATE_WEEKS);
 
     }
 
