@@ -10,9 +10,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/title_activity_show_shift" android:name="com.uhhuh.tipreport.ShowShiftActivity" android:parentActivityName="com.uhhuh.tipreport.MainActivity">
-                  <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.uhhuh.tipreport.MainActivity"/>
-        </activity>
+
     </application>
 
 </manifest>
