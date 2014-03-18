@@ -16,7 +16,6 @@ import java.util.Locale;
 
 
 public class MainActivity extends Activity {
-	private ShiftDataSource dataSource;
 	
 
     @Override
@@ -33,8 +32,7 @@ public class MainActivity extends Activity {
         mainParent.addView(tipEntry);
         mainParent.addView(tipStats);
 
-        dataSource = new ShiftDataSource(this);
-        dataSource.open();
+
             }
 
     public void saveShift(View view){
@@ -63,19 +61,6 @@ public class MainActivity extends Activity {
 
 
     }
-	
-	public void showStats(View view){
-		Intent intent = new Intent(this, StatsActivity.class);
-		startActivity(intent);
-		
-	}
-	
-	public void showShifts(View view){
-	Intent intent = new Intent(this, ShowAllShiftActivity.class);
-	startActivity(intent);
-	}
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
