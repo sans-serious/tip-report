@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import java.util.Calendar;
 import java.util.Locale;
@@ -23,6 +24,15 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        LinearLayout mainParent = (LinearLayout) findViewById(R.id.main_view_parent);
+
+        View tipEntry = getLayoutInflater().inflate(R.layout.tip_entry_box, null);
+        View tipStats = getLayoutInflater().inflate(R.layout.activity_stats_2, null);
+
+        mainParent.addView(tipEntry);
+        mainParent.addView(tipStats);
+
         dataSource = new ShiftDataSource(this);
         dataSource.open();
             }
@@ -31,45 +41,24 @@ public class MainActivity extends Activity {
 		
 		HashMap<String, String> data = new HashMap<String, String>();
 		
-		Calendar cal_date = Calendar.getInstance() ;
-		
-		EditText enter_tips = (EditText) findViewById(R.id.enterTips);
-        EditText enter_hours = (EditText) findViewById(R.id.enterHours);
+		Calendar cal_date = Calendar.getInstance();
 
-        String hours = enter_hours.getText().toString();
-        String tips = enter_tips.getText().toString();
-		
-		cal_date.add(cal_date.HOUR_OF_DAY, -8);
-	
-        
-		String day = cal_date.getDisplayName(cal_date.DAY_OF_WEEK,cal_date.SHORT, Locale.US);
+        EditText employer = (EditText) findViewById(R.id.employer);
+        EditText position = (EditText) findViewById(R.id.position);
+        EditText clockIn = (EditText) findViewById(R.id.clock_in_time);
+        EditText clockOut = (EditText) findViewById(R.id.clock_out_time);
+        EditText tips = (EditText) findViewById(R.id.tips);
+
+
+
+
+        String day = cal_date.getDisplayName(cal_date.DAY_OF_WEEK,cal_date.SHORT, Locale.US);
 		String month = cal_date.getDisplayName(cal_date.MONTH, cal_date.LONG, Locale.US);
 		String day_num = Integer.toString(cal_date.get(cal_date.DAY_OF_MONTH));
 		String year = Integer.toString(cal_date.get(cal_date.YEAR));
 		String week_of = Integer.toString(cal_date.get(cal_date.WEEK_OF_YEAR));
-		
-        
-        
-		
-		if(tips.length() != 0 || hours.length() != 0){
-        
-		data.put(MySQLiteHelper.COLUMN_TIP, tips);
-		data.put(MySQLiteHelper.COLUMN_HOURS, hours);
-		data.put(MySQLiteHelper.COLUMN_MONTH, month);
-		data.put(MySQLiteHelper.COLUMN_DAY, day);
-		data.put(MySQLiteHelper.COLUMN_DAY_NUM, day_num);
-		data.put(MySQLiteHelper.COLUMN_YEAR, year);
-        data.put(MySQLiteHelper.COLUMN_WEEK, week_of);
 
-        dataSource.createTip(data);
-		dataSource.close();
-		
 
-		
-		Intent intent = new Intent(this, StatsActivity.class);
-    	startActivity(intent);
-		
-        }
         
 
 
