@@ -7,13 +7,14 @@ public class Shift {
 
     private int _id;
     private int job_id;
+    private int week_id;
     private String time_in;
     private String time_out;
     private String day_of_week;
     private String day_of_month;
     private int year;
-    private int week_id;
     private float tips;
+    private String month;
 
     public void SetID(int id){
         this._id = id;
@@ -51,40 +52,42 @@ public class Shift {
         this.tips = tips;
     }
 
-    public int GetID(int id){
+    public int GetID(){
         return this._id;
     }
 
-    public int GetJobID(int jobID){
+    public int GetJobID(){
         return this.job_id;
     }
 
-    public String GetTimeIn(String timeIn){
+    public String GetTimeIn(){
         return this.time_in;
     }
 
-    public String GetTimeOut(String timeOut){
+    public String GetTimeOut(){
         return this.time_out;
     }
 
-    public String GetDayOfWeek(String dayOfWeek){
+    public String GetDayOfWeek(){
         return this.day_of_week;
     }
 
-    public String GetDayOfMonth(String dayOfMonth){
+    public String GetDayOfMonth(){
         return this.day_of_month;
     }
 
-    public int GetYear(int year){
+    public int GetYear(){
         return this.year;
     }
 
-    public int GetWeekID(int weekID){
+    public int GetWeekID(){
         return this.week_id;
     }
 
-    public float GetTips(float tips){
+    public float GetTips(){
         return this.tips;
     }
+
+    public String GetMonth() { return this.month; }
 
 }

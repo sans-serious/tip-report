@@ -5,6 +5,7 @@ package com.uhhuh.tipreport;
  */
 public class Employer {
     private int _id;
+    private String employer_name;
     private String employer_type;
     private String city;
     private String state;
@@ -14,6 +15,14 @@ public class Employer {
 
     public int get_id() {
         return _id;
+    }
+
+    public String getEmployer_name() {
+        return employer_name;
+    }
+
+    public void setEmployer_name(String employer_name) {
+        this.employer_name = employer_name;
     }
 
     public void set_id(int _id) {
