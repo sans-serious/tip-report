@@ -5,7 +5,7 @@ package com.uhhuh.tipreport;
  */
 public class Week {
 
-    private int _id;
+    private Long _id;
     private int week_num;
     private int year;
 
@@ -25,11 +25,11 @@ public class Week {
         this.week_num = week_num;
     }
 
-    public int get_id() {
+    public Long get_id() {
         return _id;
     }
 
-    public void set_id(int _id) {
+    public void set_id(Long _id) {
         this._id = _id;
     }
 }

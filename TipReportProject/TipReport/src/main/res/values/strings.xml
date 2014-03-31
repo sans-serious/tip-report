@@ -14,7 +14,7 @@
     <string name="title_activity_show_shift">Verify Shift Details</string>
 	<string name="title_activity_stats">Stats</string>
     <string name="employer">Employer</string>
-    <string name="employer_hint">Joe's diner</string>
+    <string name="employer_hint">Joe\'s diner</string>
     <string name="position">Position</string>
     <string name="position_hint">Waiter</string>
     <string name="clock_in">Clock-In Time</string>

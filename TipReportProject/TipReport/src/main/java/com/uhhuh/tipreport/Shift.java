@@ -6,8 +6,10 @@ package com.uhhuh.tipreport;
 public class Shift {
 
     private int _id;
-    private int job_id;
-    private int week_id;
+
+    private long employer_id;
+    private long job_id;
+    private long week_id;
     private String time_in;
     private String time_out;
     private String day_of_week;
@@ -20,7 +22,7 @@ public class Shift {
         this._id = id;
     }
 
-    public void SetJobID(int jobID){
+    public void SetJobID(long jobID){
         this.job_id = jobID;
     }
 
@@ -44,7 +46,7 @@ public class Shift {
         this.year = year;
     }
 
-    public void setWeekID(int weekID){
+    public void setWeekID(long weekID){
         this.week_id = weekID;
     }
 
@@ -52,11 +54,21 @@ public class Shift {
         this.tips = tips;
     }
 
+    public void setMonth(String month){ this.month = month;}
+
     public int GetID(){
         return this._id;
     }
 
-    public int GetJobID(){
+    public long getEmployer_id() {
+        return employer_id;
+    }
+
+    public void SetEmployer_id(long employer_id) {
+        this.employer_id = employer_id;
+    }
+
+    public Long GetJobID(){
         return this.job_id;
     }
 
@@ -80,7 +92,7 @@ public class Shift {
         return this.year;
     }
 
-    public int GetWeekID(){
+    public long GetWeekID(){
         return this.week_id;
     }
 
